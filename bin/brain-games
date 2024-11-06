@@ -1,2 +1,17 @@
+#!/usr/bin/env php
+
 <?php
-echo "Welcome to the Brain Games!\n";
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+//require_once(__DIR__ . '/../src/Cli.php');  
+/*Так как файл подключён через autoload
+в composer.json и обновлён через команду в корне проекта "composer dump-autoload", то 
+подключать его через require не нужно; только через use, используя соответствующий namespace 
+*/
+
+use function BrainGames\Cli\greeting;
+
+function firstStep () {
+    return greeting();
+}

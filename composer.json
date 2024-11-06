@@ -6,6 +6,9 @@
     "description": "First project",
     "license": "MIT",
     "autoload": {
+        "files":[
+            "src/Cli.php"        
+        ],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
         }
@@ -16,5 +19,7 @@
             "email": "strelok313@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.1"
+    }
 }
