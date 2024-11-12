@@ -2,3 +2,8 @@
 [![Actions Status](https://github.com/Beleg313/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Beleg313/php-project-45/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/46da06c296897eb7b1eb/maintainability)](https://codeclimate.com/github/Beleg313/php-project-45/maintainability)
+
+# Brain-even
+
+Пример установки зависимостей и запуска игры:
+[Демонстрация установки и игры](https://asciinema.org/a/GfqjOPUqX4ux4TtBIYbZMloqC)
