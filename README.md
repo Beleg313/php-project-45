@@ -7,3 +7,8 @@
 
 Пример установки зависимостей и запуска игры:
 [Демонстрация установки и игры](https://asciinema.org/a/GfqjOPUqX4ux4TtBIYbZMloqC)
+
+# Brain-calc
+
+Пример установки зависимостей и запуска игры:
+[Демонстрация игры](https://asciinema.org/a/RjKztWH4atkCSVqXyiagMBiQq)
