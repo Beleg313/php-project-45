@@ -12,3 +12,8 @@
 
 Пример установки зависимостей и запуска игры:
 [Демонстрация игры](https://asciinema.org/a/RjKztWH4atkCSVqXyiagMBiQq)
+
+# Brain-gcd
+
+Пример установки зависимостей и запуска игры:
+[Демонстрация игры](https://asciinema.org/a/ijSi7ihOL8NlU4OkdlnT9sD76)
