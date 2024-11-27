@@ -17,3 +17,8 @@
 
 Пример установки зависимостей и запуска игры:
 [Демонстрация игры](https://asciinema.org/a/ijSi7ihOL8NlU4OkdlnT9sD76)
+
+# Brain-progression
+
+Пример установки зависимостей и запуска игры:
+[Демонстрация игры](https://asciinema.org/a/J65hV661gQFEcGWMV58fNsUl3)
