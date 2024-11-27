@@ -22,3 +22,8 @@
 
 Пример установки зависимостей и запуска игры:
 [Демонстрация игры](https://asciinema.org/a/J65hV661gQFEcGWMV58fNsUl3)
+
+# Brain-prime
+
+Пример установки зависимостей и запуска игры:
+[Демонстрация игры](https://asciinema.org/a/kfHTHUzHrMMcVukaJ1FkKf8dG)
