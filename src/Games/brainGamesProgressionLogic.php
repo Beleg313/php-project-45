@@ -44,6 +44,7 @@ function progressionGameStart() {
 
     $gameDescription = "What number is missing in the progression?";
 
+    $generateRound = [];
     $count = 0;
 
     while ($count < 3) {
