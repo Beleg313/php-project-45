@@ -37,7 +37,7 @@ function answer ($booleanEven) {
 
 function evenGameStart () {
 
-    $gameDescription = "Answer 'yes' if number even otherwise answer 'no'.";
+    $gameDescription = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
 
     $count = 0;
 
