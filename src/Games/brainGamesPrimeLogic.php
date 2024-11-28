@@ -11,7 +11,6 @@ function randomNumber()
 
 function basicConditionsCheck(int $num)
 {
-
     if ($num < 2) {
         return 'no';
     }
@@ -20,14 +19,13 @@ function basicConditionsCheck(int $num)
         return 'yes';
     }
 
-    if (($num % 2 === 0) && $num > 2) {
+    if ($num % 2 === 0) {
         return 'no';
     }
 }
 
 function isPrime(int $num)
 {
-
     basicConditionsCheck($num);
 
     $squereNum = round(sqrt($num));
@@ -42,7 +40,6 @@ function isPrime(int $num)
 
 function primeGameStart()
 {
-
     $gameDescription = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
 
     $generateRound = [];
