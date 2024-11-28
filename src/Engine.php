@@ -5,8 +5,8 @@ namespace Braingames\engine;
 use function cli\line;
 use function cli\prompt;
 
-
-function runGameProfile ($gameDescription, $generateRound) {
+function runGameProfile($gameDescription, $generateRound)
+{
 
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
@@ -20,23 +20,18 @@ function runGameProfile ($gameDescription, $generateRound) {
         [$question, $correctAnswer] = $generateRound[$countRightAnswers];
 
         line("Question: %s", $question);
-        $userAnswer = prompt("Your answer");        
+        $userAnswer = prompt("Your answer");
 
-        if ($userAnswer === $correctAnswer) {            
+        if ($userAnswer === $correctAnswer) {
             line("Correct!");
             $countRightAnswers++;
-        }
-
-        else {
+        } else {
             line("'$userAnswer' is wrong answer ;(. Correct answer was '$correctAnswer'.\nLet's try again, {$name}!");
             break;
-        }  
-
+        }
     }
 
     if ($countRightAnswers === 3) {
         line("Congratulations, {$name}!");
-    } 
-
+    }
 }
-

@@ -4,58 +4,47 @@ namespace BrainGames\brainGamesEvenLogic;
 
 use function BrainGames\engine\runGameProfile;
 
-function randomNumber () {   
-    return rand(1,100);
+function randomNumber()
+{
+    return rand(1, 100);
 }
 
-function isEven ($num) {  
-
+function isEven($num)
+{
     if ($num % 2 === 0) {
-        return true;        
+        return true;
+    } else {
+        return false;
     }
-
-    else {
-       return false;
-    }    
-
 }
 
-function answer ($booleanEven) {
-    
+function answer($booleanEven)
+{
     $answer = '';
-
     if ($booleanEven === true) {
         $answer = 'yes';
-    }
-
-    else if ($booleanEven === false){
+    } elseif ($booleanEven === false) {
         $answer = 'no';
     }
-
     return $answer;
 }
 
-function evenGameStart () {
-
+function evenGameStart()
+{
     $gameDescription = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
 
     $count = 0;
-
     while ($count < 3) {
+        $randomNum = randomNumber();
 
-    $randomNum = randomNumber();
+        $booleanEven = isEven($randomNum);
+        $correctAnswer = answer($booleanEven);
 
-    $booleanEven = isEven($randomNum);
-    $correctAnswer = answer($booleanEven);
+        $question = "{$randomNum}";
 
-    $question = "{$randomNum}";
-   
-    $generateRound[] = [$question, $correctAnswer];
+        $generateRound[] = [$question, $correctAnswer];
 
-    $count++;
-    
-}
-
+        $count++;
+    }
     runGameProfile($gameDescription, $generateRound);
-
 }

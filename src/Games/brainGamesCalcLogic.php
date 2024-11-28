@@ -4,60 +4,49 @@ namespace BrainGames\brainGamesCalcLogic;
 
 use function BrainGames\engine\runGameProfile;
 
-function randomNumber () {   
-    return rand(1,10);
+function randomNumber()
+{
+    return rand(1, 10);
 }
 
-function randomOperator () {
-
+function randomOperator()
+{
     $operators = ['+', '-', '*'];
     $key = array_rand($operators);
 
     return $operators[$key];
-
 }
 
-function calculation ($num1, $num2, $operator) {
-
+function calculation($num1, $num2, $operator)
+{
     if ($operator === '+') {
         return $num1 + $num2;
-    }
-
-    else if ($operator === '-') {
+    } elseif ($operator === '-') {
         return $num1 - $num2;
-    }
-
-    else if ($operator === '*') {
+    } elseif ($operator === '*') {
         return $num1 * $num2;
     }
-
 }
 
-function calcGameStart () {
-
+function calcGameStart()
+{
     $gameDescription = "What is the result of the expression?";
 
     $count = 0;
-
     while ($count < 3) {
+        $num1 = randomNumber();
+        $num2 = randomNumber();
+        $operator = randomOperator();
 
-    $num1 = randomNumber();
-    $num2 = randomNumber();
-    $operator = randomOperator ();
+        $correctAnswer = calculation($num1, $num2, $operator);
 
-    $correctAnswer = calculation ($num1, $num2, $operator);
+        $correctAnswer = (string) $correctAnswer;
 
-    $correctAnswer = (string) $correctAnswer;
+        $question = "{$num1} {$operator} {$num2}";
 
-    $question = "{$num1} {$operator} {$num2}";
-   
-    $generateRound[] = [$question, $correctAnswer];
+        $generateRound[] = [$question, $correctAnswer];
 
-    $count++;
-    
-}
-
+        $count++;
+    }
     runGameProfile($gameDescription, $generateRound);
-
 }
-
