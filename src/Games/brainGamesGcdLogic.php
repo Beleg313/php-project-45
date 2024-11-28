@@ -9,7 +9,7 @@ function randomNumber()
     return rand(1, 100);
 }
 
-function gcd($num1, $num2)
+function gcd(int $num1, int $num2)
 {
     while ($num2 !== 0) {
         $r = $num1 % $num2;
@@ -25,6 +25,7 @@ function gcdGameStart()
 {
     $gameDescription = "Find the greatest common divisor of given numbers.";
 
+    $generateRound = [];
     $count = 0;
     while ($count < 3) {
         $num1 = randomNumber();

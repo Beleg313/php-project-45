@@ -4,7 +4,7 @@ namespace BrainGames\brainGamesProgressionLogic;
 
 use function BrainGames\engine\runGameProfile;
 
-function randomNumber($min, $max)
+function randomNumber(int $min, int $max)
 {
     return rand($min, $max);
 }

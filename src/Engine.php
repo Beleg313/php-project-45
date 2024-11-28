@@ -1,11 +1,11 @@
 <?php
 
-namespace Braingames\engine;
+namespace BrainGames\engine;
 
 use function cli\line;
 use function cli\prompt;
 
-function runGameProfile($gameDescription, $generateRound)
+function runGameProfile(string $gameDescription, array $generateRound)
 {
 
     line('Welcome to the Brain Games!');

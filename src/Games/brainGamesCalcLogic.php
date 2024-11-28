@@ -17,7 +17,7 @@ function randomOperator()
     return $operators[$key];
 }
 
-function calculation($num1, $num2, $operator)
+function calculation(int $num1, int $num2, string $operator)
 {
     if ($operator === '+') {
         return $num1 + $num2;
@@ -32,6 +32,7 @@ function calcGameStart()
 {
     $gameDescription = "What is the result of the expression?";
 
+    $generateRound = [];
     $count = 0;
     while ($count < 3) {
         $num1 = randomNumber();

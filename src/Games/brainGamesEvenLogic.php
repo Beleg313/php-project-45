@@ -9,7 +9,7 @@ function randomNumber()
     return rand(1, 100);
 }
 
-function isEven($num)
+function isEven(int $num)
 {
     if ($num % 2 === 0) {
         return true;
@@ -18,7 +18,7 @@ function isEven($num)
     }
 }
 
-function answer($booleanEven)
+function answer(bool $booleanEven)
 {
     $answer = '';
     if ($booleanEven === true) {
@@ -33,6 +33,7 @@ function evenGameStart()
 {
     $gameDescription = "Answer \"yes\" if the number is even, otherwise answer \"no\".";
 
+    $generateRound = [];
     $count = 0;
     while ($count < 3) {
         $randomNum = randomNumber();

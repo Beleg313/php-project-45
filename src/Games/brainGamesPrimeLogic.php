@@ -9,7 +9,7 @@ function randomNumber()
     return rand(1, 100);
 }
 
-function basicConditionsCheck($num)
+function basicConditionsCheck(int $num)
 {
 
     if ($num < 2) {
@@ -25,7 +25,7 @@ function basicConditionsCheck($num)
     }
 }
 
-function isPrime($num)
+function isPrime(int $num)
 {
 
     basicConditionsCheck($num);
@@ -45,16 +45,14 @@ function primeGameStart()
 
     $gameDescription = "Answer \"yes\" if given number is prime. Otherwise answer \"no\".";
 
+    $generateRound = [];
     $count = 0;
-
     while ($count < 3) {
         $num = randomNumber();
 
         $question = "{$num}";
 
-
         $correctAnswer = isPrime($num);
-
 
         $generateRound[] = [$question, $correctAnswer];
 
